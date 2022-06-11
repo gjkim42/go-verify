@@ -12,7 +12,8 @@ steps:
 - uses: actions/checkout@v3
 - uses: actions/setup-go@v3
   with:
-    go-version: '^1'
+    go-version: '^1' # Caveat: You must specify go-version until
+                     # https://github.com/actions/setup-go/issues/49 is resolved.
 - uses: gjkim42/verify-go@v1
 ```
 
