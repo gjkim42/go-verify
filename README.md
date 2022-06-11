@@ -3,6 +3,11 @@
 verify-go verifies a Go codebase. We can use this Github Action to ensure
 a consistent go codebase.
 
+The verifications includes
+- gofmt
+- goimports
+- go mod tidy
+
 ## Usage
 
 See [action.yml](https://github.com/gjkim42/verify-go/blob/main/action.yml)
