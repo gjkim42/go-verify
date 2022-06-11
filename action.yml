@@ -1,0 +1,10 @@
+name: 'Verify Go codebase'
+description: 'Verify a Go codebase'
+author: 'Gunju Kim <gjkim042@gmail.com>'
+inputs:
+  go_mod:
+    description: 'Set this option to true if the codebase uses go modules'
+    default: true
+runs:
+  using: 'node16'
+  main: 'main.js'
