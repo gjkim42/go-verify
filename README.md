@@ -22,6 +22,11 @@ steps:
 - uses: gjkim42/verify-go@v1
 ```
 
+### `.verifygoignore`
+
+Specifies intentionally untracked files that verify-go should ignore. Each line
+in a `.verifygoignore` file specifies a pattern.
+
 ### If the codebase does not use the go module
 ```yaml
 steps:
