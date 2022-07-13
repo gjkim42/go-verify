@@ -1,4 +1,4 @@
-name: 'Verify Go codebase'
+name: 'Go Verify codebase'
 description: 'Verify a Go codebase'
 author: 'Gunju Kim <gjkim042@gmail.com>'
 inputs:

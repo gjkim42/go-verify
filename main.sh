@@ -19,10 +19,10 @@ set -o nounset
 set -o pipefail
 
 findnotargs="-wholename './vendor' "
-if [[ -f ".verifygoignore" ]]; then
+if [[ -f ".goverifyignore" ]]; then
 	while IFS=$'\n,' read -r ignorefile; do
 		findnotargs+="-o -wholename '${ignorefile}' "
-	done < ".verifygoignore"
+	done < ".goverifyignore"
 fi
 
 find_files() {
