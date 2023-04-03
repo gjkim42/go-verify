@@ -15,10 +15,7 @@ See [action.yml](https://github.com/gjkim42/go-verify/blob/main/action.yml)
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: actions/setup-go@v3
-  with:
-    go-version: '^1' # Caveat: You must specify go-version until
-                     # https://github.com/actions/setup-go/issues/49 is resolved.
+- uses: actions/setup-go@v4
 - uses: gjkim42/go-verify@v1
 ```
 
@@ -31,9 +28,7 @@ in a `.goverifyignore` file specifies a pattern.
 ```yaml
 steps:
 - uses: actions/checkout@v3
-- uses: actions/setup-go@v3
-  with:
-    go-version: '^1'
+- uses: actions/setup-go@v4
 - uses: gjkim42/go-verify@v1
   with:
     go_mod: false
